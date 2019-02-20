@@ -1,0 +1,15 @@
+#content1 {
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    background-color: yellow;
+    padding: 50px;
+}
+
+#content2 {
+    height: 100px;
+    width: 50%;
+    margin: auto;
+    background-color: orange;
+    padding: 50px;
+}
