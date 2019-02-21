@@ -1,3 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Muli', sans-serif;
+}
+
+.container {
+    display: block;
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.top-bar {
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 1fr 8fr 2fr 2fr;
+    color: black;
+    /* height: 40px; */
+    background: #fff;
+    z-index: 2000000000;
+    /* padding: 1em; */
+}
+
+.logo {
+    padding: 2px;
+}
+
+.top-bar img {
+    height: 50px;
+}
+
+.login-btn, .track-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-btn {
+    font-size: .6em;
+    background-color: yellow;
+}
+
+.track-btn {
+    font-size: .6em;
+    background-color: rgba(62, 131, 177, 0.87);
+    color: white;
+}
+
+.banner {
+    background: linear-gradient(#b2cecf88, #b2cecf88), url('../img/background-image.jpg') no-repeat;
+    background-size: cover;
+    padding: 4em 1em;
+    color: white;
+    text-align: center;
+}
+
+h1, h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.base {
+    display: grid;
+    
+}
+
+.tabs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 60%;
+    padding: 15px 20px;
+    font-weight: bold;
+    border-bottom: solid grey 1px;
+}
+
+.tabs > div {
+    margin: 0 auto;
+}
+
+button {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
 #content1 {
     height: 100px;
     width: 50%;
@@ -28,28 +118,6 @@
     border-radius: 2em;
 }
 
-input {
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.tabs {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 60%;
-    padding: 15px 20px;
-    font-weight: bold;
-    border-bottom: solid grey 1px;
-}
-
-.right-border {
-    border-right: solid grey 1px;
-}
-
-.tabs > div {
-    margin: 0 auto;
-}
 
 .animated {
     -webkit-animation-duration: 4s;
