@@ -3,54 +3,66 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>home-screen</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
     <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
     
 </head>
-<body>
-    
-
+<body> 
+    <!-- beginning of container -->
     <div class="container">
+
+        <!-- header section -->
         <header class="top-bar">
+
+            <!-- Logo image -->
             <div class="logo">
                 <img src="img/logo.svg" alt="logo">
             </div>
+
+            <!-- slogan -->
             <div class="slogan">
                 <p>parcels on the go!</p>
             </div>
+
+            <!-- Login button -->
             <div class="login-btn">
                 log in
             </div>
+
+            <!-- Track button -->
             <div class="track-btn">
                 track
             </div>
         </header>
+        <!-- End of header section-->
+
+        <!-- Banner -->
         <div class="banner">
             <h1> The leading click and collect and returns logistics solution for your business</h1>
         </div>
 
+        <!-- Tabs below banner -->
         <div class="base">
             <div class="grid">
                 <div class="tabs">
                     <div>
-                        <button type="button" id="show">I'm a business</button>
+                        <button onclick="change()" type="button" id="show" class="shown">I'm a business</button>
                     </div>
                     <div>
-                        <button type="button" id="hide">I'm a shopper</button>
+                        <button onclick="reverse()" type="button" id="hide" class="hidden">I'm a shopper</button>
                     </div>
                 </div>
             </div>
             <div class="line"></div>
         </div>
 
-      
-        <div id="business-content" class="animated fadeIn">
-            anada one
-        </div>
+        <!-- I am a shopper tab content -->
         <div id="shopper-content" class="animated fadeIn">
+
+            <!-- Content displayed in grid form -->
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12">
@@ -75,11 +87,45 @@
                     </div>
                 </div>
                 <div class="row">
+                    <div class="col-12">
+                        <p class="heading text-center">Track order</p>
+
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam dolore quidem perferendis eaque necessitatibus libero quibusdam nam earum sint sequi ad quis iste, eum minus doloribus mollitia consequatur temporibus molestias.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Order progress section -->
+                <div class="row  align-items-center">
                     <div class="col-2">
-                        <div class="progress-bar1" data-percent="26" data-duration="1000" data-color="#ccc,yellow"></div>
+                        <div class="progress-bar1" data-percent="26" data-duration="1000" data-color="#ccc,#006494"></div>
                     </div>
                     <div class="col-8">
-                        
+                        <p class="heading">Order progress</p>
+                        <p>Order Number 7876342HJNJKKSN87</p>
+                        <div class="order-progress">
+                            <div>3 Days Remaining</div>
+                            <div>With Courier</div>
+                        </div>
+                    </div>
+
+                    <!-- Link to next page for more info -->
+                    <div class="col-2 more-info">
+                        MORE INFO
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-2">
+                        <div class="progress-bar1" data-percent="16" data-duration="1000" data-color="#ccc,#006494"></div>
+                    </div>
+                    <div class="col-8">
+                        <p class="heading">Order progress</p>
+                        <p>Order Number 457FGHNHJ8876789</p>
+                        <div class="order-progress">
+                            <div>4 Days Remaining</div>
+                            <div>With Courier</div>
+                        </div>
                     </div>
                     <div class="col-2">
                         
@@ -87,21 +133,14 @@
                 </div>
             </div>
         </div>
+        <!-- End of I am a shopper tab content -->
+
+        <!-- I am a business tab content -->
+        <div id="business-content" class="animated fadeIn">
+            anada one
+        </div>
     </div>
 
-   <div class="container mt-4">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="progress-bar1" data-percent="60" data-duration="1000" data-color="#ccc,yellow"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="progress-bar1" data-percent="70" data-duration="1000" data-color="#ccc,red"></div>
-            </div>
-            <div class="col-md-4">
-                <div class="progress-bar1" data-percent="40" data-duration="1000" data-color="#ccc,green"></div>
-            </div>
-        </div>
-        </div>
    
 <!--
    <h2>Progress bar</h2>

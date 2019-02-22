@@ -103,15 +103,14 @@ button {
 
 
 #shopper-content {
-    display:none;
     width: 100%;
     margin: auto;
-    background-color: yellow;
     padding: 50px;
 }
 
 
 #business-content {
+    display:none;
     height: 100px;
     width: 100%;
     margin: auto;
@@ -175,20 +174,20 @@ button {
    
   .progress-bar1 .rotate {
     clip: rect(0 50px 100px 0);
-    background-color: #4b86db;
+    background-color: lightgray;
   }
    
   .progress-bar1 .left {
     clip: rect(0 50px 100px 0);
     opacity: 1;
-    background-color: #b3cef6;
+    background-color: lightgray;
   }
    
   .progress-bar1 .right {
     clip: rect(0 50px 100px 0);
     transform: rotate(180deg);
     opacity: 0;
-    background-color: #4b86db;
+    background-color: lightgray;
   }
    
   @keyframes
@@ -200,6 +199,37 @@ button {
   }
   } 
 
+  .order-progress {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    padding: 10px;
+    grid-gap: 5px !important;
+  }
+
+  .order-progress > div {
+    background-color: #B2B5B1;
+    padding:10px;
+    border-radius: 4px;
+  }
+
+  .more-info {
+    background-color: #006494 !important;
+    color:white;
+    height: 100% !important;
+    width:100% !important;
+    text-align: right !important;
+    text-transform: uppercase;
+    font-size: 2em !important;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+@media (max-width: 990px) {
+    .container {
+        width: 100%;
+    }
+}
 
 /* 
 Normal bar
