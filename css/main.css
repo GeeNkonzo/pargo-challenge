@@ -258,6 +258,10 @@ button:focus {
       max-width: 100% !important;
   }
 
+  .nowrap {
+      flex-wrap: nowrap !important;
+  }
+
 @media (max-width: 1000px) {
     .more-info {
         font-size: 1em !important;
