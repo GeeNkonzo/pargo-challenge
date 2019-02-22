@@ -12,15 +12,6 @@ $('#hide').click(function() {
 
 });
 
-function change() { 
-  document.getElementByClassName("hidden").style.backgroundColor = "red";
-  document.getElementsByClassName("shown").style.backgroundColor = "white";
-}
-
-function reverse() { 
-  document.getElementsByClassName("shown").style.backgroundColor = "red";
-  document.getElementsByClassName("hidden").style.backgroundColor = "white";
-}
 
 // function move() {
 //     var elem = document.getElementById("bar");   
@@ -35,3 +26,6 @@ function reverse() {
 //       }
 //     }
 // } 
+
+
+

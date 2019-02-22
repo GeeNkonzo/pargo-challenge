@@ -54,13 +54,24 @@ body {
     color: white;
 }
 
-.banner {
+.home-banner {
     background: linear-gradient(#b2cecf88, #b2cecf88), url('../img/background-image.jpg') no-repeat;
     background-size: cover;
     padding: 4em 1em;
     color: white;
     text-align: center;
     text-transform: uppercase !important;
+    text-shadow: 2px 2px #706d62;
+}
+
+.details-banner {
+    background: url('../img/background-image.jpg') no-repeat;
+    background-size: cover;
+    padding: 4em 1em;
+    color: white;
+    text-align: center;
+    text-transform: uppercase !important;
+    text-shadow: 2px 2px #706d62;
 }
 
 .base {
@@ -80,13 +91,13 @@ body {
 .tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding: 15px 20px;
     font-weight: bold;
     border-bottom: solid grey 1px;
+    align-items: center !important;
 }
 
 .tabs > div {
-    margin: 0 auto;
+    margin: 2px;
 }
 
 button {
@@ -94,11 +105,21 @@ button {
     font-weight: bold;
     background-color: white;
     border: none;
+    padding: 15px 20%;
+    border-radius: 2px;
+}
+
+button:active {
+    background-color: lightgray;
+}
+
+button:focus {
+    background-color: lightgray;
 }
 
 .heading {
     text-transform: uppercase !important;
-    font-weight: bold !important
+    font-weight: bold !important;
 }
 
 
@@ -114,7 +135,6 @@ button {
     height: 100px;
     width: 100%;
     margin: auto;
-    background-color: orange;
     padding: 50px;
 }
 
@@ -197,7 +217,11 @@ button {
    100% {
    opacity: 1;
   }
-  } 
+  }
+  
+  .location-img {
+      max-width: 100%;
+  }
 
   .order-progress {
     display: grid;
@@ -225,9 +249,81 @@ button {
     font-weight: bold;
   }
 
-@media (max-width: 990px) {
+  a {
+      text-decoration: none !important;
+      color:white !important;
+  }
+
+  .images {
+      max-width: 100% !important;
+  }
+
+@media (max-width: 1000px) {
+    .more-info {
+        font-size: 1em !important;
+        padding: 6px;
+    }
+
+    progress-bar1 {
+        position: relative;
+        height: 50px;
+        width: 50px;
+        margin:0 auto;
+    }
+       
+      .progress-bar1 div {
+        position: absolute;
+        height:50px;
+        width: 50px;
+        border-radius: 50%;
+    }
+       
+      .progress-bar1 div span {
+        position: absolute;
+        font-family: Arial;
+        font-size: 12.5px;
+        line-height: 37.5px;
+        height: 37.5px;
+        width: 37.5px;
+        left: 6.25px;
+        top: 6.25px;
+        text-align: center;
+        border-radius: 50%;
+        background-color: white;
+    }
+       
+      .progress-bar1 .background { background-color: #b3cef6; }
+       
+      .progress-bar1 .rotate {
+        clip: rect(0 25px 50px 0);
+        background-color: lightgray;
+    }
+       
+      .progress-bar1 .left {
+        clip: rect(0 25px 50px 0);
+        opacity: 1;
+        background-color: lightgray;
+    }
+       
+      .progress-bar1 .right {
+        clip: rect(0 25px 50px 0);
+        transform: rotate(180deg);
+        opacity: 0;
+        background-color: lightgray;
+    }
+}
+
+@media (max-width: 600px) {
     .container {
+        width: 100% !important;
+        margin: 0 !important;
+        padding: auto 0 !important;
+    }
+
+    #shopper-content {
         width: 100%;
+        margin: auto;
+        padding: 50px 0px;
     }
 }
 
