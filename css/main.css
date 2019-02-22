@@ -19,10 +19,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 8fr 2fr 2fr;
     color: black;
-    /* height: 40px; */
     background: #fff;
-    z-index: 2000000000;
-    /* padding: 1em; */
 }
 
 .logo {
@@ -30,23 +27,30 @@ body {
 }
 
 .top-bar img {
-    height: 50px;
+    height: 70px;
+}
+
+.slogan {
+    display: flex !important;
+    align-items: center !important;
 }
 
 .login-btn, .track-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-transform: uppercase !important;
+    font-weight: bold !important
 }
 
 .login-btn {
-    font-size: .6em;
+    font-size: 1em !important;
     background-color: yellow;
 }
 
 .track-btn {
-    font-size: .6em;
-    background-color: rgba(62, 131, 177, 0.87);
+    font-size: 1em !important;
+    background-color: #006494;
     color: white;
 }
 
@@ -56,22 +60,26 @@ body {
     padding: 4em 1em;
     color: white;
     text-align: center;
-}
-
-h1, h2 {
-    text-transform: uppercase;
-    font-weight: bold;
+    text-transform: uppercase !important;
 }
 
 .base {
-    display: grid;
-    
+    position: relative;    
+}
+
+.line {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: gray;
+    height: 50%;
+    width: 2px;
 }
 
 .tabs {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 60%;
     padding: 15px 20px;
     font-weight: bold;
     border-bottom: solid grey 1px;
@@ -82,40 +90,33 @@ h1, h2 {
 }
 
 button {
-    text-transform: uppercase;
+    text-transform: uppercase !important;
     font-weight: bold;
-    text-decoration: none;
+    background-color: white;
+    border: none;
+}
+
+.heading {
+    text-transform: uppercase !important;
+    font-weight: bold !important
 }
 
 
-#content1 {
-    height: 100px;
-    width: 50%;
+#shopper-content {
+    display:none;
+    width: 100%;
     margin: auto;
     background-color: yellow;
     padding: 50px;
 }
 
-#content2 {
-    display:none;
+
+#business-content {
     height: 100px;
-    width: 50%;
+    width: 100%;
     margin: auto;
     background-color: orange;
     padding: 50px;
-}
-
-#progress {
-    width: 100%;
-    background-color: grey;
-    border-radius: 2em;
-}
-  
-#bar {
-    width: 0%;
-    height: 30px;
-    background-color: rgba(62, 131, 177, 0.87);
-    border-radius: 2em;
 }
 
 
@@ -140,3 +141,78 @@ button {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
  }
+
+
+ .progress-bar1 {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    margin:0 auto;
+  }
+   
+  .progress-bar1 div {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+   
+  .progress-bar1 div span {
+    position: absolute;
+    font-family: Arial;
+    font-size: 25px;
+    line-height: 75px;
+    height: 75px;
+    width: 75px;
+    left: 12.5px;
+    top: 12.5px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: white;
+  }
+   
+  .progress-bar1 .background { background-color: #b3cef6; }
+   
+  .progress-bar1 .rotate {
+    clip: rect(0 50px 100px 0);
+    background-color: #4b86db;
+  }
+   
+  .progress-bar1 .left {
+    clip: rect(0 50px 100px 0);
+    opacity: 1;
+    background-color: #b3cef6;
+  }
+   
+  .progress-bar1 .right {
+    clip: rect(0 50px 100px 0);
+    transform: rotate(180deg);
+    opacity: 0;
+    background-color: #4b86db;
+  }
+   
+  @keyframes
+  toggle {  0% {
+   opacity: 0;
+  }
+   100% {
+   opacity: 1;
+  }
+  } 
+
+
+/* 
+Normal bar
+  
+#progress {
+    width: 100%;
+    background-color: grey;
+    border-radius: 2em;
+}
+  
+#bar {
+    width: 0%;
+    height: 30px;
+    background-color: rgba(62, 131, 177, 0.87);
+    border-radius: 2em;
+} */

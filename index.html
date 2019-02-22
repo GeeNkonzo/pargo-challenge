@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,800" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
     
 </head>
 <body>
@@ -17,35 +18,92 @@
             <div class="logo">
                 <img src="img/logo.svg" alt="logo">
             </div>
-            <div>
+            <div class="slogan">
                 <p>parcels on the go!</p>
             </div>
             <div class="login-btn">
-                <h2>log in</h2>
+                log in
             </div>
             <div class="track-btn">
-                <h2>track</h2>
+                track
             </div>
         </header>
         <div class="banner">
             <h1> The leading click and collect and returns logistics solution for your business</h1>
         </div>
+
+        <div class="base">
+            <div class="grid">
+                <div class="tabs">
+                    <div>
+                        <button type="button" id="show">I'm a business</button>
+                    </div>
+                    <div>
+                        <button type="button" id="hide">I'm a shopper</button>
+                    </div>
+                </div>
+            </div>
+            <div class="line"></div>
+        </div>
+
+      
+        <div id="business-content" class="animated fadeIn">
+            anada one
+        </div>
+        <div id="shopper-content" class="animated fadeIn">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <p class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime eligendi exercitationem,</p>
+                            
+                        <p>
+                            tempore odio velit quo, libero earum repellat rem ullam ea! Molestiae illo labore dolor neque nisi odio dolores eum! Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quas explicabo recusandae rem cum vitae beatae adipisci. Obcaecati eaque velit, sapiente voluptatibus optio dicta, fugit modi a quia ipsum officia.
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi unde quam deserunt quos distinctio cupiditate dignissimos, iure eius nobis officiis facilis architecto sint nostrum, quis harum similique voluptatum odio saepe? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos at porro cum aspernatur corrupti ullam deserunt omnis dolor aliquam praesentium ducimus modi, temporibus ipsum facilis recusandae totam maiores obcaecati ad.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img src="img/location-pin.png" alt="location pin">
+                    </div>
+                    <div class="col-8">
+                        <p class="heading">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p> 
+
+                        <p>   
+                            Cupiditate veniam deserunt nisi vel sed alias eos obcaecati quo pariatur suscipit quisquam praesentium maxime laudantium corporis repellendus molestiae cum, mollitia culpa?. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quas quam ipsum nobis sed accusantium perspiciatis. Sint, tenetur magnam. Inventore quisquam minus consectetur dolorem quia quam ab illum eum ducimus adipisci!
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2">
+                        <div class="progress-bar1" data-percent="26" data-duration="1000" data-color="#ccc,yellow"></div>
+                    </div>
+                    <div class="col-8">
+                        
+                    </div>
+                    <div class="col-2">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-        <!-- <div>
-            <button type="button" id="hide">I'm a business</button>
-        </div>
-        <div>
-            <button type="button" id="show">I'm a shopper</button>
-        </div>
-    
 
-   <div id="content1" class="animated fadeIn">
-        This is the content.
-   </div>
-   <div id="content2" class="animated fadeIn">
-        Anada one
-   </div>
-
+   <div class="container mt-4">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="progress-bar1" data-percent="60" data-duration="1000" data-color="#ccc,yellow"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="progress-bar1" data-percent="70" data-duration="1000" data-color="#ccc,red"></div>
+            </div>
+            <div class="col-md-4">
+                <div class="progress-bar1" data-percent="40" data-duration="1000" data-color="#ccc,green"></div>
+            </div>
+        </div>
+        </div>
+   
+<!--
    <h2>Progress bar</h2>
    <div id="progress">
        <div id="bar"></div>
@@ -57,5 +115,10 @@
 
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script src="js/jQuery-plugin-progressbar.js"></script>
+    <script>
+        $(".progress-bar1").loading();
+    </script>
 </body>
 </html>

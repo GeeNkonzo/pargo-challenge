@@ -1,23 +1,27 @@
-$('#hide').click(function() {
-    $('#content1').hide();
-    $('#content2').show();
-});
-
 $('#show').click(function() {
-    $('#content1').show();
-    $('#content2').hide();
+
+  $('#shopper-content').hide();
+  $('#business-content').show();
+
 });
 
-function move() {
-    var elem = document.getElementById("bar");   
-    var width = 0;
-    var id = setInterval(frame, 10);
-    function frame() {
-      if (width >= 26) {
-        clearInterval(id);
-      } else {
-        width++; 
-        elem.style.width = width + '%';
-      }
-    }
-} 
+$('#hide').click(function() {
+
+  $('#shopper-content').show();
+  $('#business-content').hide();
+
+});
+
+// function move() {
+//     var elem = document.getElementById("bar");   
+//     var width = 0;
+//     var id = setInterval(frame, 10);
+//     function frame() {
+//       if (width >= 26) {
+//         clearInterval(id);
+//       } else {
+//         width++; 
+//         elem.style.width = width + '%';
+//       }
+//     }
+// } 
