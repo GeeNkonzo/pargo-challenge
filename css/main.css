@@ -237,6 +237,15 @@ button:focus {
     border-radius: 4px;
   }
 
+  .order {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px;
+    grid-gap: 5px !important;
+  }
+
   .more-info {
     background-color: #006494 !important;
     color:white;
